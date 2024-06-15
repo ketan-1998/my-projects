@@ -7,102 +7,142 @@
     <title>Razorpay</title>
   </head>
   <body>
-    <!-- parent div -->
-    <div>
-      <!-- navHero container -->
-      <div>
-        <!-- navBar -->
-        <nav class="bg-deepBlue">
-          <div
-            class="w-10/12 max-w-[1080px] mx-auto flex justify-between items-center flex-wrap"
-          >
-            <a href="/" class="py-7">
-              <img src="./images/logo.svg" alt="" class="w-[125px] h-[30px]" />
-            </a>
-            <ul class="flex gap-6 flex-wrap">
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Payemnts</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Banking</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Corporate</a>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Card</a>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Payroll</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Resource</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Support</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-              <li
-                class="text-white hover:text-lightBlue transition-all duration-200 cursor-pointer relative group py-7"
-              >
-                <a href="#">Pricing</a>
-                <div
-                  class="bg-lightBlue w-full hidden group-hover:block h-1 absolute bottom-0 transition-all duration-200"
-                ></div>
-              </li>
-            </ul>
-            <!-- btn -->
-            <div class="flex gap-6 items-center">
-              <img
-                src="./images/india-flag.svg"
-                class="w-[28px] h-[20px]"
-                alt=""
-              />
-              <button
-                class="text-white border rounded-sm border-lightBlue py-2 px-5"
-              >
-                Log in
-              </button>
-              <button
-                class="bg-white hover:text-lightBlue500 text-lightBlue font-semibold font-mullish py-2 px-4 rounded-sm"
-              >
-                Sign Up
-              </button>
-            </div>
+    <!-- nav & hero -->
+    <section class="bg-deepBlue pt-2 relative">
+      <!-- navbar -->
+      <nav
+        class="w-10/12 max-w-[1000px] mx-auto flex justify-between items-center mb-4"
+      >
+        <!-- logo -->
+        <div class="">
+          <a href="#"><img src="./images/logo.svg" class="w-28" alt="" /></a>
+        </div>
+        <!-- nav link -->
+        <div class="text-white capitalize flex gap-3">
+          <div class="relative group py-5">
+            <a href="#">payments</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
           </div>
-        </nav>
+          <div class="relative group py-5">
+            <a href="#">Banking</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+          <div class="relative group py-5">
+            <a href="#">corprate card</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+          <div class="relative group py-5">
+            <a href="#">payroll</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+          <div class="relative group py-5">
+            <a href="#">resource</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+          <div class="relative group py-5">
+            <a href="#">support</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+          <div class="relative group py-5">
+            <a href="#">pricing</a>
+            <div
+              class="w-full h-1 bottom-0 bg-lightBlue500 absolute transition-all duration-200 group-hover:block hidden"
+            ></div>
+          </div>
+        </div>
+        <!-- log & sign section -->
+        <div class="flex text-white space-x-3">
+          <img src="./images/india-flag.svg" alt="" />
+          <button
+            class="bg-lightBlue500 font-mullish capitalize font-bold hover:bg-lightBlue transition-all duration-200 px-5 py-3 rounded-md"
+          >
+            log in
+          </button>
+          <button
+            class="bg-white font-mullish capitalize font-bold text-lightBlue500 hover:text-lightBlue transition-all duration-200 px-5 py-3 rounded-md"
+          >
+            sign up
+          </button>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- hero section -->
+      <div class="flex w-10/12 max-w-[1000px] mx-auto">
+        <!-- text -->
+        <div class="flex flex-col justify-center gap-10 items-start text-white">
+          <h1 class="text-3xl font-mullish font-semibold leading-10">
+            power your finance, grow your business
+          </h1>
+          <div class="bg-greenLight w-7 h-1"></div>
+          <p class="opacity-50">
+            Accepts your payments from customers. Automate payouts to venders &
+            employees. Never run out of working capital
+          </p>
+          <button
+            class="capitalize bg-lightBlue px-4 py-2 hover:bg-lightBlue500 rounded-md"
+          >
+            Sign up now
+          </button>
+        </div>
+        <!-- image -->
+        <div>
+          <img src="./images/hero-illustration.jpg" class="w-[1250px]" alt="" />
+        </div>
       </div>
-      <!-- heroSection -->
-      <div></div>
-    </div>
+      <div class="absolute -bottom-[150px] overflow-hidden w-full">
+        <img src="./images/hero-shape.svg" class="w-full scale-105" alt="" />
+      </div>
+      <!-- hero section end -->
+    </section>
+    <!-- nav & hero end -->
+
+    <!-- feature & -->
+    <section class="mt-[120px] min-h-[200px] relative overflow-hidden">
+      <!-- design image absolute -->
+      <img
+        src="./images/feature-section1-dottedrows.png"
+        class="absolute -top-[120px] rotate-180"
+        alt=""
+      />
+      <img
+        src="./images/feature-section1-dottedrows.png"
+        class="absolute right-8 top-10 rotate-180"
+        alt=""
+      />
+      <!-- main div -->
+      <div class="w-10/12 max-w-[1000px] mx-auto">
+        <!-- top heading -->
+        <h1 class="text-2xl font-bold font-mullish text-center capitalize">
+          Accepts payments with Razorpay payments suite
+        </h1>
+        <div class="w-7 h-1 bg-greenLight mx-auto m-3"></div>
+        <!-- list & img -->
+        <div class="flex gap-2 border mt-24">
+          <!-- list -->
+          <div class="m-10">
+            <h1 class="font-mullish font-bold text-2xl leading-10">Supercharge your business with the all-powerful <span class="capitalizet text-lightBlue">payment gateway</span></h1>
+          </div>
+          <!-- img -->
+          <div>
+            <img src="./images/payment-suite.png" alt="">
+          </div>
+        </div>
+        <!-- end list & img -->
+      </div>
+      <!-- main div end -->
+    </section>
   </body>
 </html>
